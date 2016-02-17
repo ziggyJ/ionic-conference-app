@@ -7,23 +7,29 @@
     "url": "https://github.com/driftyco/ionic-conference-app.git"
   },
   "dependencies": {
-    "ionic-framework": "2.0.0-alpha.37",
-    "moment": "^2.10.6"
+    "angular2": "2.0.0-beta.2",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.13",
+    "ionic-framework": "2.0.0-beta.0",
+    "ionicons": "3.0.0-alpha.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "autoprefixer-loader": "^3.1.0",
-    "awesome-typescript-loader": "0.12.0-rc.2",
-    "css-loader": "^0.22.0",
-    "file-loader": "^0.8.4",
-    "node-sass": "^3.4.2",
-    "sass-loader": "^3.1.1",
-    "style-loader": "^0.13.0",
-    "typescript": "1.5.3",
-    "url-loader": "^0.5.6",
-    "webpack": "^1.12.4"
+    "awesome-typescript-loader": "0.15.9",
+    "strip-sourcemap-loader": "0.0.1",
+    "typescript": "1.7.5"
   },
   "cordovaPlugins": [
-    "cordova-plugin-whitelist"
+    "cordova-plugin-whitelist",
+    {
+      "locator": "https://github.com/VersoSolutions/CordovaClipboard",
+      "id": "com.verso.cordova.clipboard"
+    }
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [
+    "ios",
+    "android"
+  ]
 }
